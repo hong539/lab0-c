@@ -29,6 +29,13 @@ Some distros like Arch Linux won't install `aspell-en` with `aspell`, and you mu
 $ sudo pacman -S aspell-en
 ```
 
+Check Prerequisites under Arch Linux
+build-essential will be base-devel alternatively
+clang-format included in clang
+```shell
+$ pacman -Q | grep "base-devel\|git\|clang\|cppcheck\|aspell\|colordiff\|valgrind"
+```
+
 Note: [Cppcheck](http://cppcheck.sourceforge.net/) version must be at least 1.90, otherwise
 it might report errors with false positives. You can get its version by executing `$ cppcheck --version`.
 Check [Developer Info](http://cppcheck.sourceforge.net/devinfo/) for building Cppcheck from source.
