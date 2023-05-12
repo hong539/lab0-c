@@ -30,8 +30,11 @@ $ sudo pacman -S aspell-en
 ```
 
 Check Prerequisites under Arch Linux
+
 build-essential will be base-devel alternatively
+
 clang-format included in clang
+
 ```shell
 $ pacman -Q | grep "base-devel\|git\|clang\|cppcheck\|aspell\|colordiff\|valgrind"
 ```
